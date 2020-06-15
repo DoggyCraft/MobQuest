@@ -1,0 +1,8 @@
+main: com.hiphurra.mq.MobQuest
+name: MobQuest
+version: 1.0.0
+author: hiphurra
+commands:
+  ma:
+    description: Yes
+    usage: a lot of but this
