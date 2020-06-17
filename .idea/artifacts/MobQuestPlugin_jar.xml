@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="MobQuestPlugin:jar">
-    <output-path>$USER_HOME$/Desktop/Bukkit/plugins</output-path>
-    <root id="archive" name="MobQuestPlugin.jar">
-      <element id="module-output" name="MobQuestPlugin" />
-      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
-    </root>
-  </artifact>
-</component>
