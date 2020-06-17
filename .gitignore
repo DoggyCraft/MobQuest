@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Maven stuff
+/target
+# IntelliJ IDEA
+*.iml
+.idea
+dependency-reduced-pom.xml
