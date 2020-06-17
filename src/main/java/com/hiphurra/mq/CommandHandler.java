@@ -9,16 +9,27 @@ public class CommandHandler implements CommandExecutor {
 
 
     @Override
-    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if (sender instanceof Player) {
-            Player player = (Player) sender;
-            if(cmd.getName().equalsIgnoreCase("ma")) {
-                player.sendMessage("You used a command!");
-            }
+    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
+    {
+        String base = (args.length > 0 ? args[0] : "").toLowerCase();
+        String last = (args.length > 0 ? args[args.length - 1] : "").toLowerCase();
+
+        if (base.isEmpty())
+        {
+            // Return help to player
+            return true;
         }
-        else {
-          sender.sendMessage("Only players can use this command!");
+
+        // The help command is a little special
+        if (base.equals("?") || base.equals("help")) {
+            // Return help to player
+            return true;
         }
+
+
+        // TODO - Get a list of all commands
+
+
         return true;
     }
 }

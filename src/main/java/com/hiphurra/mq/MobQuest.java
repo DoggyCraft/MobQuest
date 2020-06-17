@@ -9,7 +9,6 @@ public final class MobQuest extends JavaPlugin {
     public void onEnable() {
         getCommand("ma").setExecutor(new CommandHandler());
         getServer().getPluginManager().registerEvents(new Events(), this);
-        getServer().broadcastMessage("Hello world!");
     }
 
     @Override
