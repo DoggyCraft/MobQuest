@@ -6,7 +6,6 @@ import java.util.Collections;
 import java.util.List;
 
 public interface Command {
-
     boolean execute(CommandSender sender, String... args);
 
     default List<String> tab() {
